@@ -1,6 +1,10 @@
 <Alloy>
 	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
-	  
+		<Label id="label">Victor Luna Medina</ br>Appcelerator</Label>
+	         <TableView id="tabla1">
+                      <TableViewSection id="Seccion1">
+                            <TableViewRow title="Secciòn 1"> </TableViewRow>
+                      </TableViewSection>
+             </TableView>
 	</Window>
 </Alloy>
