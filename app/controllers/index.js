@@ -14,11 +14,34 @@ $.index.open();
          Ti.API.info(this.responseText);
          JSON.stringify(OL);
          alert(JSON.stringify(OL));
-         
+         alert(JSON.parse(OL));
          for (var i=0;i<OL.items.length;i++){
          	
+        //creacion de datos
+			var row = Ti.UI.createTableViewRow({
+				
+				datos:OL.items[i],
+			
+			});
+			
+			//Donde se va a ver
+			var view = Ti.UI.createView({
+						
+			});	
+			
+			//label que va a llevar cada seccion		
+			var titulo = Ti.UI.createLabel({
+						
+			});	
+			
+			//imagen que va a llevar cada seccion		
+			var imagen = Ti.UI.createImageView({
+						
+						
+			});
+        
          	
-         }
+         };
      },
      
      onerror : function(e) {

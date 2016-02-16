@@ -1,9 +1,9 @@
 <Alloy>
 	<Window class="container">
-		<Label id="label">Victor Luna Medina</ br>Appcelerator</Label>
+		<Label id="label">Victor Luna Medina</Label>
 	         <TableView id="tabla1">
                       <TableViewSection id="Seccion1">
-                            <TableViewRow title="Secciòn 1"> </TableViewRow>
+                            <TableViewRow title="Seccion 1"> </TableViewRow>
                       </TableViewSection>
              </TableView>
 	</Window>

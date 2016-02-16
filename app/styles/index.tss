@@ -5,7 +5,11 @@
 "Label": {
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
-	color: "white"
+	color: "white",
+	font:{
+		fontSize: 60,
+		fontFamily: 'Arial',
+	}
 }
 
 "#label": {
