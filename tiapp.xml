@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app 
+  xmlns:ti="http://ti.appcelerator.org">
+  <id>com.victor.prueba</id>
+  <name>prueba</name>
+  <version>1.0</version>
+  <publisher>LEISURE</publisher>
+  <url>http://www.facebook.com.mx/riwoluzione</url>
+  <description/>
+  <copyright>2016 by LEISURE</copyright>
+  <icon>appicon.png</icon>
+  <fullscreen>false</fullscreen>
+  <navbar-hidden>false</navbar-hidden>
+  <analytics>true</analytics>
+  <guid>44e6cade-9497-44cb-9fff-839bf9d4e470</guid>
+  <property name="ti.ui.defaultunit" type="string">dp</property>
+  <ios>
+    <plist>
+      <dict>
+        <key>UISupportedInterfaceOrientations~iphone</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+        </array>
+        <key>UISupportedInterfaceOrientations~ipad</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+          <string>UIInterfaceOrientationPortraitUpsideDown</string>
+          <string>UIInterfaceOrientationLandscapeLeft</string>
+          <string>UIInterfaceOrientationLandscapeRight</string>
+        </array>
+        <key>UIRequiresPersistentWiFi</key>
+        <false/>
+        <key>UIPrerenderedIcon</key>
+        <false/>
+        <key>UIStatusBarHidden</key>
+        <false/>
+        <key>UIStatusBarStyle</key>
+        <string>UIStatusBarStyleDefault</string>
+      </dict>
+    </plist>
+  </ios>
+  <android 
+    xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+      <precache/>
+      <splash>
+        <enabled>true</enabled>
+        <inline-css-images>true</inline-css-images>
+      </splash>
+      <theme>default</theme>
+    </mobileweb>
+    <modules>
+      <module platform="commonjs">ti.cloud</module>
+    </modules>
+    <deployment-targets>
+      <target device="iphone">false</target>
+      <target device="ipad">false</target>
+      <target device="android">true</target>
+      <target device="mobileweb">false</target>
+      <target device="windows">false</target>
+    </deployment-targets>
+    <sdk-version>5.1.2.GA</sdk-version>
+    <plugins>
+      <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
+    <property name="appc-app-id" type="string">56c152005b48f32035746b79</property>
+    <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-development" type="string">yA8pHtBfL6W1KwS3GdFxsJ5SIMCc1Kx8</property>
+    <property name="acs-oauth-key-development" type="string">OYc83BLyk9M9Vs1Gd5WZsyKYMGnP81St</property>
+    <property name="acs-api-key-development" type="string">Du8ZmoipMqP2l1hVZLI0T26k38nwT4tg</property>
+    <property name="acs-username-development" type="string">appc_app_user_dev</property>
+    <property name="acs-password-development" type="string">sRDvSo3xV9CX1yaDll</property>
+    <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
+    <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-oauth-secret-production" type="string">YLo48THTInKcXWyqlqo45LVV0H3aagUP</property>
+    <property name="acs-oauth-key-production" type="string">2VrVJ6frCpYwibI4nL0twQnKugH17Soq</property>
+    <property name="acs-api-key-production" type="string">LVt0RGzqtXTGNPXBOtOuQmAInbKZaaoA</property>
+    <property name="acs-username-production" type="string">appc_app_user</property>
+    <property name="acs-password-production" type="string">ZluPY17ittVjWoTgWd</property>
+    <property name="appc-org-id" type="string">100099762</property>
+    <property name="appc-creator-user-id" type="string">b9f71e36-9d16-4b06-8e79-675c3893dbde</property>
+  </ti:app>
