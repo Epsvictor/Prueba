@@ -11,49 +11,50 @@ $.index.open();
   
      onload : function(e) {
      	 ol=JSON.parse(this.responseText);
-         Ti.API.info(this.responseText);
-         Ti.API.info(JSON.stringify(ol.items.elemento));
-         JSON.stringify(ol);
-         alert(JSON.stringify(ol));
+         //Ti.API.info(this.responseText);
+         //Ti.API.info(JSON.stringify(ol.items.elemento));
+       
+         //JSON.stringify(ol);
+         //alert(JSON.stringify(ol));
          //alert(ol);
+         var datosTabla= [];
+         
          for (var i=0;i<ol.items.length;i++){
          	
-        //datos
+            Ti.API.info(JSON.stringify(ol.items[i].img));        
+            //datos
 			var fila = Ti.UI.createTableViewRow({
-				
-				datos: ol.items[i]
 			
-			});
+			   height:100,
+			   width: 320, 
 			
-	   var vista = Ti.UI.createView({
-            top: 20,
-            width: Ti.UI.SIZE,
-            height: Ti.UI.SIZE,
-               
-                   
-     });
-             
-             /*       win1.add(radialGradient);
-                    win1.add(linearGradient);
-                    win1.open();
-			
-			var vista = Ti.UI.createView({
-						
-			});*/	
-			
+			});		
 			
 			var titulo = Ti.UI.createLabel({
+						color: 'white',
+						left: 10,
+						top: 10,
+						text: ol.items[i].title,
+						width: 200,
 						
 			});	
 			
 					
 			var imagen = Ti.UI.createImageView({
 						
-						
+						right:20,
+						borderColor: 'white',
+						borderRadius: 2,
+						image: ol.items[i].img, 
+						height: 60,
+						width: 60,
 			});
-        
+            fila.add(titulo);
+         	fila.add(imagen);
+         	datosTabla.push(fila);
          	
          };
+        $.tabla1.setData(datosTabla);
      },
      
      onerror : function(e) {

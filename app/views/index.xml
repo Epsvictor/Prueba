@@ -1,15 +1,8 @@
 <Alloy>
 	<Window class="container">
-		<Label id="label">Victor Luna</Label>
+		<!--<Label id="label">Victor Luna</Label> -->
 	         <TableView id="tabla1">
-                      <TableViewSection id="Seccion1">
-                            <TableViewRow title="Seccion1 JSON"> </TableViewRow>
-                            <TableViewRow title="Seccion2 JSON"> </TableViewRow>
-                      </TableViewSection>
-                      <TableViewSection id="Seccion2">
-                            <TableViewRow title="Seccion3 JSON"> </TableViewRow>
-                            <TableViewRow title="Seccion4 JSON"> </TableViewRow>
-                      </TableViewSection>
+                      
              </TableView>
 	</Window>
 </Alloy>

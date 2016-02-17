@@ -21,43 +21,8 @@
 	     }	
 }
 	
-	
- "#Seccion1":{
 
-	font:{
-		fontsize:100,
-		color:'white',
-	    },
-	      backgroundGradient: {
-                    type: 'linear',
-                    startPoint: { x: '0%', y: '50%' },
-                    endPoint: { x: '100%', y: '50%' },
-                    colors: [ { color: 'red', offset: 0.0}, 
-                              { color: 'white', offset: 0.25 }, 
-                              { color: 'red', offset: 1.0 } ],
-                    }
-	
-    }
-   
-"#Seccion2":{
-
-	font:{
-		fontsize:100,
-		color:'white',
-	    },
-	      backgroundGradient: {
-                    type: 'linear',
-                    startPoint: { x: '0%', y: '50%' },
-                    endPoint: { x: '100%', y: '50%' },
-                    colors: [ { color: 'red', offset: 0.0}, 
-                              { color: 'white', offset: 0.25 }, 
-                              { color: 'red', offset: 1.0 } ],
-                    }
-	
-    }
-   
-
-	
+ 
 
 
 
