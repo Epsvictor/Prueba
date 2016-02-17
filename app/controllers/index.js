@@ -12,21 +12,34 @@ $.index.open();
      onload : function(e) {
      	 ol=JSON.parse(this.responseText);
          Ti.API.info(this.responseText);
+         Ti.API.info(JSON.stringify(ol.items.elemento));
          JSON.stringify(ol);
-         // alert(JSON.stringify(ol));
+         alert(JSON.stringify(ol));
+         //alert(ol);
          for (var i=0;i<ol.items.length;i++){
          	
         //datos
-			var row = Ti.UI.createTableViewRow({
+			var fila = Ti.UI.createTableViewRow({
 				
-				datos:ol.items[i],
+				datos: ol.items[i]
 			
 			});
 			
+	   var vista = Ti.UI.createView({
+            top: 20,
+            width: Ti.UI.SIZE,
+            height: Ti.UI.SIZE,
+               
+                   
+     });
+             
+             /*       win1.add(radialGradient);
+                    win1.add(linearGradient);
+                    win1.open();
 			
-			var view = Ti.UI.createView({
+			var vista = Ti.UI.createView({
 						
-			});	
+			});*/	
 			
 			
 			var titulo = Ti.UI.createLabel({
